@@ -5,7 +5,7 @@ library(dplyr)
 library("ggmap")
 
 
-register_google(key = "AIzaSyD1nEKqqX_1jWyP-XGg9huWYjTk_l1XlOg", write = TRUE)
+register_google(key = "[insert your google maps api key here]", write = TRUE)
 
 US_cases <- myDF %>% filter(Country_Region == "US")
 case_loc <- data.frame(lon=US_cases$Long, lat=US_cases$Lat, type=US_cases$Case_Type)
